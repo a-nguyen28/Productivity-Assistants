@@ -1,0 +1,10 @@
+num = input("Input a number: ")
+
+
+counter = 1
+for i in range(int(num)):
+    print(counter)
+    counter *= (i+1)
+
+
+print(counter)
