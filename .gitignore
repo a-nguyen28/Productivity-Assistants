@@ -1,0 +1,22 @@
+# PlatformIO build files
+/.pio
+/.vscode/.cache
+/.vscode/.settings.json
+/.vscode/launch.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# User files
+*.swp
+*.swo
+.bash_history
+.gitconfig
+
+# Ignore all PlatformIO packages (auto downloaded)
+/.platformio/packages/
