@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{keyval}
+\usepackage{xcolor}
+
+% Global counter for entries
+\newcounter{ucentrycounter}
+
+% Horizontal rule separator
+\newcommand{\entrysep}{\vspace{0.5em}\hrule\vspace{0.5em}}
+
+% ----------------------
+
+% Award or Honor
+\newcommand{\award}[6]{%
+\stepcounter{ucentrycounter}%
+\textbf{\theucentrycounter. Category:} \textcolor{blue}{Award or Honor} \\
+\textbf{Name of the award or honor:} #1 \\
+\textbf{Level of Recognition:} #2\\
+\textbf{Type(Academic/Non academic): } #3 \\
+\textbf{When did you receive:} #4\\
+\textbf{Eligibility requirements for this award or honor:} #5\\
+\textbf{What did you do to achieve this award or honor:} #6\\
+\entrysep
+}
+
+% Educational Preparation Program
+\newcommand{\eduprogram}[5]{%
+\stepcounter{ucentrycounter}%
+\textbf{\theucentrycounter. Category:} \textcolor{blue}{Educational Preparation Program} \\
+\textbf{Program Name:} #1 \\
+\textbf{Brief Description of the Program:} #2 \\
+\textbf{When did you participate in the program:} #3 \\
+\textbf{Hours spent per week:} #4 \\
+\textbf{Weeks spent per year:} #5
+\entrysep
+}
+
+% Extracurricular Activity
+\newcommand{\extracurricular}[5]{%
+\stepcounter{ucentrycounter}%
+\textbf{\theucentrycounter. Category:} \textcolor{blue}{Extracurricular Activity} \\
+\textbf{Name of the activity:} #1 \\
+\textbf{What did you do:} #2 \\
+\textbf{When did you participate in this activity:} #3 \\
+\textbf{Hours spent per week:} #4 \\
+\textbf{Weeks spent per year:} #5
+\entrysep
+}
+
+% Volunteering / Community Service
+\newcommand{\volunteering}[6]{%
+\stepcounter{ucentrycounter}%
+\textbf{\theucentrycounter. Category:} \textcolor{blue}{Volunteering / Community Service} \\
+\textbf{Name of the organization, program, school or group:} #1 \\
+\textbf{Description of the organization, program, school or group:} #2 \\
+\textbf{What did you do:} #3 \\
+\textbf{When did you volunteer:} #4 \\
+\textbf{Hours spent per week:} #5 \\
+\textbf{Weeks spent per year:} #6
+\entrysep
+}
+
+% Work Experience
+\newcommand{\workexperience}[8]{%
+\stepcounter{ucentrycounter}%
+\textbf{\theucentrycounter. Category:} \textcolor{blue}{Work Experience} \\
+\textbf{Where did you work:} #1 \\
+\textbf{Briefly describe the company or organization:} #2 \\
+\textbf{Job title:} #3 \\
+\textbf{Job responsibilities:} #4 \\
+\textbf{When did you work at this job:} #5 \\
+\textbf{Do you still work at this job?:} #6 \\
+\textbf{Start date:} #7 \\
+\textbf{End date:} #8
+\entrysep
+}
+
+
+% ----------------------
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{UC Application: Activities and Awards Draft}}
+\end{center}
+
+% Example entries
+\award
+{State Wrestling Champion} % Name
+{State} % Level of Recognition
+{Non-academic} % Type
+{9th Grade} % When received
+{Participation in school wrestling program and qualifying tournaments} % Eligibility
+{Trained rigorously, won school and regional competitions, represented state at championship} % Achievement
+
+\eduprogram
+{Summer STEM Academy} % Program Name
+{A three-week intensive STEM research program focused on robotics and engineering challenges.} % Brief Description
+{10th grade} % Dates Participated
+{15} % Hours per week
+{3} % Weeks per year
+
+
+\extracurricular
+{Wrestling Team Captain} % Activity Name
+{Rebuilt a struggling wrestling program, tripled the team roster, organized practices, and led team meetings.} % What you did
+{12th grade} % Dates participated
+{10} % Hours per week
+{9} % Weeks per year
+
+\volunteering
+{Community Food Bank} % Organization Name
+{A local nonprofit providing food and resources to underserved families.} % Description
+{Organized food drives, packed boxes, and distributed meals to families in need.} % What did you do
+{After 12th grade} % Dates
+{5} % Hours per week
+{12} % Weeks per year
+
+\workexperience
+{Starbucks Coffee} % Where
+{International coffeehouse chain serving beverages and food.} % Description
+{Barista} % Job Title
+{Prepared beverages, handled customer transactions, maintained store cleanliness.} % Responsibilities
+{11th grade} % When
+{No} % Still working?
+{June 2022} % Start Date
+{May 2023} % End Date
+
+\end{document}
